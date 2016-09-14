@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Работа с формами</title>
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<form class="pc_request" action="" method="post" name="pc_request">
+    <fieldset>
+        <h2>Заказ компьютера</h2>
+        <fieldset>
+            <legend>Личная информация</legend>
+            <ul>
+                <li><label for="1name">Имя:<em>*</em></label><input type="text" name="1name"></li>
+                <li><label for="2name">Фамилия:</label><input type="text" name="2name"></li>
+                <li><label for="age">Возраст:</label><input type="number" min="1" max="90" step="1" name="age"></li>
+            </ul>
+        </fieldset>
+    <fieldset>
+        <legend>Вид</legend>
+        <ul>
+            <li><label for="types">ноутбук</label> <input type="radio" name="types"></li>
+            <li><label for="types">десктоп</label> <input type="radio" name="types"></li>
+        </ul>
+    </fieldset>
+    <fieldset>
+        <legend>Процессор</legend>
+        <ul>
+            <li><label for="types">Процессор</label>
+            <select>
+                <option name="proc1" value="100 руб">процессор 1</option>
+                <option name="proc2" value="100 руб">процессор 2</option>
+                <option name="proc3" value="100 руб">процессор 3</option>
+            </select></li>
+
+            <li><label for="cost">Стоимость процессора</label><input type="text" name="cost"></li>
+        </ul>
+    </fieldset>
+        <fieldset>
+            <legend>Дополнительные параметры</legend>
+            <p>оперативная память</p>
+            <ul>
+                <li>
+                    <label for="ROM">256 - 500 руб.</label>
+                    <input type="radio" name="ROM">
+                </li>
+                <li>
+                    <label for="ROM">512 - 800 руб.</label>
+                    <input type="radio" name="ROM">
+                    </li>
+                <li>
+                    <label for="ROM">1024 - 1000 руб.</label>
+                    <input type="radio" name="ROM">
+                </li>
+            </ul>
+        </fieldset>
+        <ul>
+            <li><button class="submit" type="submit">Принять</button></li>
+            <li><button class="reset" type="reset">Очистить</button></li>
+        </ul>
+    </fieldset>
+</form>
+
+<form>
+    <h2>Регистрация пользователей</h2>
+    <fieldset>
+        <ul>
+            <li><label for="1name">Имя:<em>*</em></label><input type="text" name="name"></li>
+            <li><label for="pass">Пароль:<em>*</em></label><input type="password" name="pass"></li>
+            <li><label for="rpass">Подтверждение пароля:<em>*</em></label><input type="password" name="rpass"></li>
+        </ul>
+        <ul>
+            <li><button class="submit" type="submit">Подтвердить</button></li>
+            <li><button class="reset" type="reset">Очистить</button></li>
+        </ul>
+    </fieldset>
+</form>
+
+<form>
+    <h2>Отзыв</h2>
+    <fieldset>
+        <ul>
+            <li><label for="1name">Имя:<em>*</em></label><input type="text" name="1name"></li>
+            <li><label for="2name">Фамилия:<em>*</em></label><input type="text" name="2name"></li>
+            <li><label for="3name">Отчество:<em>*</em></label><input type="text" name="3name"></li>
+            <li><label for="3name">E-mail:<em>*</em></label><input type="email" name="mail"></li>
+        </ul>
+        <ul>
+            <li>
+                <textarea></textarea>
+            </li>
+        </ul>
+        <ul>
+            <li><button class="submit" type="submit">Отправить</button></li>
+            <li><button class="reset" type="reset">Очистить</button></li>
+        </ul>
+    </fieldset>
+</form>
+
+</body>
+</html>
